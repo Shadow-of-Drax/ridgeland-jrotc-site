@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raider Team | Ridgeland JROTC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Panther Crest" class="logo">
+    <h1>Ridgeland JROTC</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+      <a href="raider.html">Raider Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Raider Team Sign-Up</h2>
+    <p>The Raider Team is a physically demanding team that focuses on strength, speed, teamwork, and discipline. Interested cadets should be motivated, coachable, and ready to work hard!</p>
+
+    <form action="https://formsubmit.co/james.r.warren83@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Raider Team Sign-Up" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="grade">Grade Level:</label><br />
+      <select id="grade" name="grade">
+        <option>9th</option>
+        <option>10th</option>
+        <option>11th</option>
+        <option>12th</option>
+      </select><br /><br />
+
+      <label for="notes">Why do you want to join the Raider Team?</label><br />
+      <textarea id="notes" name="notes" rows="4" required></textarea><br /><br />
+
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Virtus Per Adversitatem – Strength Through Adversity</p>
+    <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
+  </footer>
+</body>
+</html>
