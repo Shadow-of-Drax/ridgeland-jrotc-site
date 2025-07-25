@@ -1,4 +1,5 @@
-* {
+*
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,19 +17,19 @@ body {
 
 header .logo {
   display: block;
-  margin: 0 auto 0.5rem auto; /* center logo above title */
-  height: 60px; /* adjust logo size */
+  margin: 0 auto 0.5rem auto;
+  height: 60px;
 }
 
 header .site-title {
   font-size: 2rem;
   font-weight: bold;
   margin: 0.5rem 0;
-  color: #C0C0C0; /* silver text */
+  color: #C0C0C0;
 }
 
 nav a, nav .dropdown {
-  margin: 0 1rem;
+  margin: 0; /* Removed margin to rely on flex gap */
 }
 
 /* Dropdown container */
@@ -50,7 +51,13 @@ nav a, nav .dropdown {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  background-color: rgba(0, 0, 0, 0.9); /* matches new style */
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  min-width: 160px;
+  z-index: 1;
 }
 
 /* Dropdown links */
@@ -109,54 +116,54 @@ a.learn-more:link,
 a.learn-more:visited {
   color: red;
   font-weight: bold;
-  text-decoration: none; /* optional: removes underline */
+  text-decoration: none;
 }
 
 a.learn-more:hover,
 a.learn-more:active {
-  color: darkred; /* slightly darker on hover for feedback */
+  color: darkred;
   font-weight: bold;
 }
 
 .list-container {
   display: flex;
-  justify-content: space-between; /* pushes lists apart */
-  gap: 2rem; /* space between lists */
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .list-container ul {
   list-style-type: disc;
   margin: 0;
   padding-left: 20px;
-  flex: 1; /* make them equal width */
+  flex: 1;
 }
 
 .list-container h4 {
   margin-bottom: 0.5rem;
-  color: gold; /* optional: highlight headings */
+  color: gold;
 }
 
 .header-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* space between images and text */
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .header-title .site-title {
-  font-size: 2rem;       /* adjust as needed */
+  font-size: 2rem;
   font-weight: bold;
-  color: #C0C0C0;        /* silver text */
+  color: #C0C0C0;
   margin: 0;
 }
 
 .header-icon {
-  height: 50px;          /* Set a fixed, smaller height */
-  width: auto;           /* Maintain aspect ratio (no distortion) */
-  max-width: 80px;       /* Prevent overly wide icons */
-  flex-shrink: 0;        /* Stop images from squishing */
+  height: 50px;
+  width: auto;
+  max-width: 80px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
@@ -173,13 +180,13 @@ a.learn-more:active {
 header {
   text-align: center;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.7); /* 70% black, semi-transparent */
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 3px solid #808080;
 }
 
 nav {
   display: flex;
-  justify-content: center;   /* center nav horizontally */
-  gap: 1.5rem;               /* space between links */
+  justify-content: center;
+  gap: 1.5rem;
   margin-top: 0.5rem;
 }
