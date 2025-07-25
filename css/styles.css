@@ -14,13 +14,6 @@ body {
   line-height: 1.6;
 }
 
-header {
-  text-align: center; /* center everything inside the header */
-  padding: 1rem 0;
-  background-color: rgba(0,0,0,0.85); /* keep consistent background */
-  border-bottom: 3px solid #808080;
-}
-
 header .logo {
   display: block;
   margin: 0 auto 0.5rem auto; /* center logo above title */
@@ -32,11 +25,6 @@ header .site-title {
   font-weight: bold;
   margin: 0.5rem 0;
   color: #C0C0C0; /* silver text */
-}
-
-nav {
-  display: inline-block; /* keeps nav centered under title */
-  margin-top: 0.5rem;
 }
 
 nav a, nav .dropdown {
@@ -62,12 +50,7 @@ nav a, nav .dropdown {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 180px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9); /* matches new style */
 }
 
 /* Dropdown links */
@@ -190,11 +173,13 @@ a.learn-more:active {
 header {
   text-align: center;
   padding: 1rem 0;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0, 0, 0, 0.7); /* 70% black, semi-transparent */
   border-bottom: 3px solid #808080;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  justify-content: center;   /* center nav horizontally */
+  gap: 1.5rem;               /* space between links */
   margin-top: 0.5rem;
 }
