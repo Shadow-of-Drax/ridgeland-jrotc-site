@@ -5,47 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raider Team | Ridgeland JROTC</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .team-card {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 1px solid #808080;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .team-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="images/logo.png" alt="Panther Crest" class="logo">
     <h1>Ridgeland JROTC</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
+    
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Teams ▾</button>
+    <div class="dropdown-content">
       <a href="raider.html">Raider Team</a>
-    </nav>
+      <a href="colorguard.html">Color Guard</a>
+      <a href="drill.html">Drill Team</a>
+      <a href="rifle.html">Rifle Team</a>
+      <a href="sabre.html">Sabre Team</a>
+      <a href="fitness.html">Fitness Team</a>
+    </div>
+  </div>
+</nav>
+
   </header>
 
   <main>
-    <h2>Raider Team Sign-Up</h2>
-    <p>The Raider Team is a physically demanding team that focuses on strength, speed, teamwork, and discipline. Interested cadets should be motivated, coachable, and ready to work hard!</p>
+    <h2>Raider Team</h2>
+    <p>The Raider Team competes in endurance events and obstacle challenges, emphasizing teamwork and strength.</p>
 
-    <form action="https://formsubmit.co/james.r.warren83@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New Raider Team Sign-Up" />
-      <input type="hidden" name="_captcha" value="false" />
+    <h3>Season</h3>
+    <p>August - November</p>
 
-      <label for="name">Full Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+    <h3>Events</h3>
+    <ul>
+      <li>Rope Bridge</li><li>5K Run</li><li>Litter Carry</li>
+    </ul>
 
-      <label for="email">Email Address:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+    <h3>Meet the Team</h3>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/placeholder.jpg" alt="Team Member">
+        <h4>Cadet Name</h4>
+        <p>Position</p>
+      </div>
+      <div class="team-card">
+        <img src="images/placeholder.jpg" alt="Team Member">
+        <h4>Cadet Name</h4>
+        <p>Position</p>
+      </div>
+    </div>
 
-      <label for="grade">Grade Level:</label><br />
-      <select id="grade" name="grade">
-        <option>9th</option>
-        <option>10th</option>
-        <option>11th</option>
-        <option>12th</option>
-      </select><br /><br />
+    <h3>Photo Gallery</h3>
+    <div class="gallery-grid">
+      <img src="images/team-placeholder.jpg" alt="Event Photo">
+      <img src="images/team-placeholder.jpg" alt="Event Photo">
+    </div>
 
-      <label for="notes">Why do you want to join the Raider Team?</label><br />
-      <textarea id="notes" name="notes" rows="4" required></textarea><br /><br />
-
-      <button type="submit" class="btn">Submit Application</button>
-    </form>
+    <h3>Waiver</h3>
+    <p><a href="files/Waiver_of_Liability.pdf" class="btn" target="_blank">Download Waiver of Liability Form (PDF)</a></p>
   </main>
 
   <footer>
