@@ -24,7 +24,7 @@ header {
   background-color: rgba(0, 0, 0, 0.85); /* Matches footer style */
   border-bottom: 2px solid #4B5320;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Logo (optional if used) */
