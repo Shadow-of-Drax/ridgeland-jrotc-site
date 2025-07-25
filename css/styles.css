@@ -15,29 +15,32 @@ body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 1rem 2rem;
-  color: #C0C0C0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center; /* center everything inside the header */
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,0.85); /* keep consistent background */
   border-bottom: 3px solid #808080;
 }
 
 header .logo {
-  height: 60px;
-  margin-right: 1rem;
+  display: block;
+  margin: 0 auto 0.5rem auto; /* center logo above title */
+  height: 60px; /* adjust logo size */
 }
 
-nav a {
-  color: #C0C0C0;
-  margin: 0 1rem;
-  text-decoration: none;
+header .site-title {
+  font-size: 2rem;
   font-weight: bold;
+  margin: 0.5rem 0;
+  color: #C0C0C0; /* silver text */
 }
 
-nav a:hover {
-  color: gold;
+nav {
+  display: inline-block; /* keeps nav centered under title */
+  margin-top: 0.5rem;
+}
+
+nav a, nav .dropdown {
+  margin: 0 1rem;
 }
 
 /* Dropdown container */
