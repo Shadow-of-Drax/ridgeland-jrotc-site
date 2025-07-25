@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url('/images/background.jpg') no-repeat center center;
+  background: url('/images/background.png') no-repeat center center;
   image-rendering: crisp-edges;
   background-size: cover;
   color: #C0C0C0;
