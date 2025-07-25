@@ -153,3 +153,35 @@ a.learn-more:active {
   margin-bottom: 0.5rem;
   color: gold; /* optional: highlight headings */
 }
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* space between images and text */
+  margin-bottom: 0.5rem;
+}
+
+.header-title .site-title {
+  font-size: 2rem;       /* adjust as needed */
+  font-weight: bold;
+  color: #C0C0C0;        /* silver text */
+  margin: 0;
+}
+
+.header-icon {
+  height: 60px;          /* ensure both icons same size */
+  width: auto;           /* maintain aspect ratio */
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,0.85);
+  border-bottom: 3px solid #808080;
+}
+
+nav {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
