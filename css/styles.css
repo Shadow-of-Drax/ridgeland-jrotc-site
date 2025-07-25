@@ -117,3 +117,17 @@ footer {
   border-top: 2px solid #4B5320;
   font-size: 0.9rem;
 }
+
+/* Ensure "Would you like to know more?" link stays bold and red */
+a.learn-more:link,
+a.learn-more:visited {
+  color: red;
+  font-weight: bold;
+  text-decoration: none; /* optional: removes underline */
+}
+
+a.learn-more:hover,
+a.learn-more:active {
+  color: darkred; /* slightly darker on hover for feedback */
+  font-weight: bold;
+}
