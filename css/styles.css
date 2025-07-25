@@ -182,7 +182,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.85); /* same as footer */
+  background-color: rgba(0, 0, 0, 0.947); /* same as footer */
   border-bottom: 2px solid #4B5320;      /* same green border as footer top */
   position: relative;
   z-index: 10; /* ensures it's above page content */
