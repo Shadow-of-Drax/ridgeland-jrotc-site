@@ -45,7 +45,7 @@ header .logo {
 }
 
 .header-title .site-title {
-  font-size: 3rem;
+  font-size: 3rem;      /* increased from 2rem to 3rem */
   font-weight: bold;
   color: #C0C0C0;
   margin: 0;
@@ -53,19 +53,19 @@ header .logo {
 
 /* Icon sizing for flanking images */
 .header-icon {
-  height: 50px;
+  height: 80px;         /* increased from 50px to 80px */
   width: auto;
-  max-width: 80px;
+  max-width: 120px;     /* optional: allows proportionally larger width */
   flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
   .header-icon {
-    height: 35px;
-    max-width: 60px;
+    height: 50px;       /* reduce but proportionally larger than old mobile size */
+    max-width: 80px;
   }
   .header-title .site-title {
-    font-size: 1.5rem;
+    font-size: 2rem;    /* slightly smaller but still bigger than before */
   }
 }
 
