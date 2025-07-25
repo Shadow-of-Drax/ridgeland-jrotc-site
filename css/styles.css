@@ -170,8 +170,21 @@ a.learn-more:active {
 }
 
 .header-icon {
-  height: 60px;          /* ensure both icons same size */
-  width: auto;           /* maintain aspect ratio */
+  height: 50px;          /* Set a fixed, smaller height */
+  width: auto;           /* Maintain aspect ratio (no distortion) */
+  max-width: 80px;       /* Prevent overly wide icons */
+  flex-shrink: 0;        /* Stop images from squishing */
+}
+
+@media (max-width: 600px) {
+  .header-icon {
+    height: 35px;
+    max-width: 60px;
+  }
+
+  .header-title .site-title {
+    font-size: 1.5rem;
+  }
 }
 
 header {
