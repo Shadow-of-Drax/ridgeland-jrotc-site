@@ -1,44 +1,93 @@
-*
-{
+/* ========== Global Reset ========== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ========== Body Styling ========== */
 body {
   background: url('/images/background.png') no-repeat center center;
-  image-rendering: crisp-edges;
   background-size: cover;
+  image-rendering: crisp-edges;
   color: #C0C0C0;
   min-height: 100vh;
   line-height: 1.6;
 }
 
+/* ========== Header ========== */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.85); /* Matches footer style */
+  border-bottom: 2px solid #4B5320;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo (optional if used) */
 header .logo {
   display: block;
   margin: 0 auto 0.5rem auto;
   height: 60px;
 }
 
-header .site-title {
+/* Header title with flanking icons */
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+.header-title .site-title {
   font-size: 2rem;
   font-weight: bold;
-  margin: 0.5rem 0;
   color: #C0C0C0;
+  margin: 0;
 }
 
-nav a, nav .dropdown {
-  margin: 0; /* Removed margin to rely on flex gap */
+/* Icon sizing for flanking images */
+.header-icon {
+  height: 50px;
+  width: auto;
+  max-width: 80px;
+  flex-shrink: 0;
 }
 
-/* Dropdown container */
+@media (max-width: 600px) {
+  .header-icon {
+    height: 35px;
+    max-width: 60px;
+  }
+  .header-title .site-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========== Navigation ========== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+nav a,
+nav .dropdown {
+  margin: 0; /* spacing handled by flex gap */
+}
+
+/* ========== Dropdown Menu ========== */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown button style */
 .dropbtn {
   background-color: transparent;
   color: #C0C0C0;
@@ -49,9 +98,8 @@ nav a, nav .dropdown {
   padding: 0.5rem 1rem;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none; /* Hide by default */
+  display: none; /* Hidden by default */
   position: absolute;
   top: 100%;
   left: 0;
@@ -60,7 +108,6 @@ nav a, nav .dropdown {
   z-index: 1;
 }
 
-/* Dropdown links */
 .dropdown-content a {
   color: #C0C0C0;
   padding: 0.75rem 1rem;
@@ -78,11 +125,11 @@ nav a, nav .dropdown {
   display: block;
 }
 
-/* Optional hover effect for button */
 .dropdown:hover .dropbtn {
   color: gold;
 }
 
+/* ========== Main Content ========== */
 main {
   background-color: rgba(0, 0, 0, 0.75);
   margin: 2rem auto;
@@ -97,21 +144,14 @@ main h2 {
   margin-bottom: 1rem;
 }
 
+/* CTA (Call to Action) links/text */
 .cta {
   margin-top: 2rem;
   font-size: 1.2rem;
   color: red;
 }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.85);
-  text-align: center;
-  padding: 1rem;
-  border-top: 2px solid #4B5320;
-  font-size: 0.9rem;
-}
-
-/* Ensure "Would you like to know more?" link stays bold and red */
+/* Bold & red for special links */
 a.learn-more:link,
 a.learn-more:visited {
   color: red;
@@ -125,6 +165,7 @@ a.learn-more:active {
   font-weight: bold;
 }
 
+/* ========== Lists (side-by-side layout) ========== */
 .list-container {
   display: flex;
   justify-content: space-between;
@@ -144,53 +185,11 @@ a.learn-more:active {
   color: gold;
 }
 
-.header-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-  background-color: transparent; /* keep icons/title area clean */
-}
-
-.header-title .site-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #C0C0C0;
-  margin: 0;
-}
-
-.header-icon {
-  height: 50px;
-  width: auto;
-  max-width: 80px;
-  flex-shrink: 0;
-}
-
-@media (max-width: 600px) {
-  .header-icon {
-    height: 35px;
-    max-width: 60px;
-  }
-
-  .header-title .site-title {
-    font-size: 1.5rem;
-  }
-}
-
-header {
-  width: 100%;
+/* ========== Footer ========== */
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
-  padding: 1rem 0;
-  background-color: rgba(0, 0, 0, 0.947); /* same as footer */
-  border-bottom: 2px solid #4B5320;      /* same green border as footer top */
-  position: relative;
-  z-index: 10; /* ensures it's above page content */
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
+  padding: 1rem;
+  border-top: 2px solid #4B5320;
+  font-size: 0.9rem;
 }
