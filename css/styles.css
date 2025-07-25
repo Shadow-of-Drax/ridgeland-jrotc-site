@@ -7,7 +7,6 @@
 
 body {
   background: url('../images/background.jpg') no-repeat center center;
-  background-size: contain; /* or cover if you prefer full fill */
   image-rendering: crisp-edges;
   background-size: cover;
   color: #C0C0C0;
