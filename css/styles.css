@@ -217,7 +217,7 @@ footer {
 /* ========== Hero Section ========== */
 
 .hero {
-  background: url('../images/hero/herobanner-test 1.webp') no-repeat center center/cover;
+  background: url('../images/hero/herobanner-test-1.webp') no-repeat center center/cover;
   background-size: contain; /* Prevents zoom/crop */
   background-color: black;  /* Fills gaps on sides */
   height: 60vh;
