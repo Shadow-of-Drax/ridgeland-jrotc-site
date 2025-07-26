@@ -130,5 +130,9 @@ function openLightbox(src) {
 
 // Load the correct gallery when page loads
 window.addEventListener("DOMContentLoaded", () => {
-  loadGallery("colorguard"); // Change to match each team page
+  for (let team in galleries) {
+    if (document.getElementById(`${team}-gallery`)) {
+      loadGallery(team);
+    }
+  }
 });
