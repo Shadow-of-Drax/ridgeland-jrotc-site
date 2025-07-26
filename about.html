@@ -4,54 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | Ridgeland JROTC</title>
+  <!-- Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-  <div class="header-title">
-    <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
-    <h1 class="site-title">Ridgeland JROTC</h1>
-    <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
-  </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-    <a href="parents-cadets.html">Parents & Cadets</a>
-    <a href="contact.html">Contact</a>
-    <div class="dropdown">
-      <button class="dropbtn">Teams ▾</button>
-      <div class="dropdown-content">
-        <a href="raider.html">Raider Team</a>
-        <a href="colorguard.html">Color Guard</a>
-        <a href="drill.html">Drill Team</a>
-        <a href="rifle.html">Rifle Team</a>
-        <a href="sabre.html">Sabre Team</a>
-        <a href="fitness.html">Fitness Team</a>
-      </div>
+    <div class="header-title">
+      <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
+      <h1 class="site-title">Ridgeland JROTC</h1>
+      <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
     </div>
-  </nav>
-</header>
 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="events.html">Events</a>
+      <a href="parents-cadets.html">Parents & Cadets</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams ▾</button>
+        <div class="dropdown-content">
+          <a href="raider.html">Raider Team</a>
+          <a href="colorguard.html">Color Guard</a>
+          <a href="drill.html">Drill Team</a>
+          <a href="rifle.html">Rifle Team</a>
+          <a href="sabre.html">Sabre Team</a>
+          <a href="fitness.html">Fitness Team</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO / INTRO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>About the Panther Battalion</h2>
+      <p>Motivating young people to become better citizens through service, resilience, and excellence.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
   <main>
-    <h2>About the Panther Battalion</h2>
-    <p>This program was previously AirForce JROTC. Switching to Army JROTC school year 25-26.</p>
-    <h3>Instructors</h3>
-    <ul>
-      <li><strong>Major Jenna Turnipseed</strong></li>
-      <li><strong>Sergeant First Class James Warren</strong></li>
-    </ul>
-    <h3>Cadet Leadership</h3>
-    <p>To Be Determined</p>
-    <h3>Unit Structure</h3>
-    <ul>
-      <li>Companies: Alpha, Bravo, Charlie, Delta</li>
-      <li>Teams: Raider Team, Rifle Team, Color Guard</li>
-    </ul>
+    <!-- Program Overview -->
+    <section class="about-program">
+      <h2>Program Overview</h2>
+      <p>The Panther Battalion began as an Air Force JROTC unit and transitioned to Army JROTC during the 2025–2026 school year. We focus on leadership, citizenship, and physical fitness to prepare cadets for challenges both inside and outside the classroom.</p>
+      <p><strong>Motto:</strong> <em>Virtus Per Adversitatem – Strength Through Adversity</em></p>
+      <p><strong>Structure:</strong> Companies Alpha, Bravo, Charlie, Delta; competitive teams include Raider, Rifle, Drill, Saber, Color Guard, and Fitness.</p>
+    </section>
+
+    <!-- Instructor Profiles -->
+    <section class="instructors">
+      <h2>Meet the Instructors</h2>
+      <div class="instructor-grid">
+        <!-- Instructor 1 -->
+        <div class="instructor-card">
+          <img src="https://via.placeholder.com/150" alt="Major Jenna Turnipseed">
+          <h3>Major Jenna Turnipseed</h3>
+          <p>Senior Army Instructor responsible for program oversight, academic instruction, and mentoring cadets toward leadership success.</p>
+        </div>
+        <!-- Instructor 2 -->
+        <div class="instructor-card">
+          <img src="https://via.placeholder.com/150" alt="Sergeant First Class James Warren">
+          <h3>Sergeant First Class James Warren</h3>
+          <p>Army Instructor with 22 years of service as a 13F Fire Support Specialist, focusing on field training, leadership development, and cadet mentorship.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cadet Leadership -->
+    <section class="cadet-leadership">
+      <h2>Cadet Leadership</h2>
+      <p>Cadet leadership positions for the 2025–2026 school year are being finalized. Check back soon to meet our Battalion Commander, staff officers, and company leaders!</p>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>Virtus Per Adversitatem – Strength Through Adversity</p>
     <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
@@ -61,7 +91,7 @@
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
     <p>Follow us on social media for updates and events!</p>

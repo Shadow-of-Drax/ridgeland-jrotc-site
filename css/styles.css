@@ -362,3 +362,48 @@ footer {
 .social-links a:hover {
   color: gold; /* hover color */
 }
+
+/* About Page Layout */
+.about-program,
+.instructors,
+.cadet-leadership {
+  background: rgba(0,0,0,0.75);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 960px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #444;
+}
+
+.about-program h2,
+.instructors h2,
+.cadet-leadership h2 {
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+/* Instructor Grid */
+.instructor-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.instructor-card {
+  background: rgba(0,0,0,0.75);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.instructor-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid gold;
+}
