@@ -84,6 +84,17 @@ nav .dropdown {
   margin: 0; /* spacing handled by flex gap */
 }
 
+/* Ensure visited links look same as normal links */
+nav a:visited {
+  color: #C0C0C0; /* silver to match your theme */
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+  color: gold; /* hover color */
+}
+
 /* ========== Dropdown Menu ========== */
 .dropdown {
   position: relative;
@@ -247,4 +258,27 @@ footer {
 .team-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ========== Event Highlight ========== */
+
+.event-highlight {
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 4px solid gold;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 960px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.event-highlight h3 {
+  color: gold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-highlight p {
+  color: #C0C0C0;
+  font-size: 1rem;
 }
