@@ -8,7 +8,7 @@
 
 /* ========== Body Styling ========== */
 body {
-  background: url('/images/background.png') no-repeat center center;
+  background: url('../images/backgrounds/background.png') no-repeat center center;
   background-size: cover;
   image-rendering: crisp-edges;
   color: #C0C0C0;
@@ -217,7 +217,7 @@ footer {
 /* ========== Hero Section ========== */
 
 .hero {
-  background: url('/images/background.png') no-repeat center center/cover;
+  background: url('../images/hero/hero-banner.jpg') no-repeat center center/cover;
   height: 60vh; /* 60% of viewport height */
   display: flex;
   justify-content: center;
