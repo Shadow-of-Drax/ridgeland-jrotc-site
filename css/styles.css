@@ -346,3 +346,19 @@ footer {
   border: 3px solid white;
   border-radius: 6px;
 }
+
+/* ========== Social Media Links ========== */
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #C0C0C0; /* default silver */
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: gold; /* hover color */
+}
