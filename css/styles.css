@@ -21,6 +21,7 @@ header {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
+  padding-bottom: 0.5rem;
   background-color: rgba(0, 0, 0, 0.85); /* Matches footer style */
   border-bottom: 2px solid #4B5320;
   position: sticky;
@@ -47,7 +48,7 @@ header .logo {
 }
 
 .header-title .site-title {
-  font-size: 5rem;      /* increased from 2rem to 3rem then to 5rem */
+  font-size: 3rem;      /* increased from 2rem to 3rem then to 5rem */
   font-weight: bold;
   color: #C0C0C0;
   margin: 0;
@@ -55,9 +56,9 @@ header .logo {
 
 /* Icon sizing for flanking images */
 .header-icon {
-  height: 110px;         /* increased from 50px to 80px then to 110px */
+  height: 60px;         /* increased from 50px to 80px then to 110px */
   width: auto;
-  max-width: 180px;     /* optional: allows proportionally larger width from 120 to 180 */
+  max-width: 100px;     /* optional: allows proportionally larger width from 120 to 180 */
   flex-shrink: 0;
 }
 
