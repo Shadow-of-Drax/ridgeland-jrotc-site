@@ -10,7 +10,6 @@
 body {
   background: url('../images/backgrounds/background.png') no-repeat center center;
   background-size: cover;
-  border: 10px solid red;
   image-rendering: crisp-edges;
   color: #C0C0C0;
   min-height: 100vh;
