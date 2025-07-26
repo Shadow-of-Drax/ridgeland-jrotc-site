@@ -96,19 +96,22 @@ nav a:active {
 }
 
 /* ========== Dropdown Menu ========== */
+/* Align dropdown container with other links */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;       /* vertically align with nav links */
 }
 
+/* Style dropdown button like regular nav links */
 .dropbtn {
-  background-color: transparent;
-  color: #C0C0C0;
-  font-weight: bold;
+  background: none;
   border: none;
-  cursor: pointer;
+  color: #C0C0C0;
+  font-weight: normal;       /* match other links */
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
 }
 
 .dropdown-content {
@@ -138,6 +141,7 @@ nav a:active {
   display: block;
 }
 
+/* Hover state matches links */
 .dropdown:hover .dropbtn {
   color: gold;
 }
