@@ -48,7 +48,7 @@ header .logo {
 }
 
 .header-title .site-title {
-  font-size: 2.5rem;      /* increased from 2rem to 3rem then to 5rem */
+  font-size: 2rem;      /* increased from 2rem to 3rem then to 5rem */
   font-weight: bold;
   color: #C0C0C0;
   margin: 0;
@@ -56,9 +56,9 @@ header .logo {
 
 /* Icon sizing for flanking images */
 .header-icon {
-  height: 50px;         /* increased from 50px to 80px then to 110px */
+  height: 40px;         /* increased from 50px to 80px then to 110px */
   width: auto;
-  max-width: 80px;     /* optional: allows proportionally larger width from 120 to 180 */
+  max-width: 60px;     /* optional: allows proportionally larger width from 120 to 180 */
   flex-shrink: 0;
 }
 
@@ -219,9 +219,8 @@ footer {
 
 .hero {
   background: url('../images/hero/herobanner-test-1.webp') no-repeat center center/cover;
-  background-size: contain; /* Prevents zoom/crop */
   background-color: black;  /* Fills gaps on sides */
-  margin-top: 1rem; /* separates hero from header */
+  margin-top: 4rem; /* separates hero from header */
   height: 60vh;
   display: flex;
   justify-content: center;
