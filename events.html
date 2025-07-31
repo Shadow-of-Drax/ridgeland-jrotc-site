@@ -3,67 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Events | Ridgeland JROTC</title>
+  <title>Events | Ridgeland JROTC - Panther Battalion</title>
+  <!-- Font Awesome for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-  <div class="header-title">
-    <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
-    <h1 class="site-title">Ridgeland JROTC</h1>
-    <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
-  </div>
+    <div class="header-title">
+      <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
+      <h1 class="site-title">Ridgeland JROTC</h1>
+      <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-    <a href="parents-cadets.html">Parents & Cadets</a>
-    <a href="contact.html">Contact</a>
-    <div class="dropdown">
-      <button class="dropbtn">Teams ▾</button>
-      <div class="dropdown-content">
-        <a href="raider.html">Raider Team</a>
-        <a href="colorguard.html">Color Guard</a>
-        <a href="drill.html">Drill Team</a>
-        <a href="rifle.html">Rifle Team</a>
-        <a href="sabre.html">Sabre Team</a>
-        <a href="fitness.html">Fitness Team</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="parents-cadets.html">Parents & Cadets</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams ▾</button>
+        <div class="dropdown-content">
+          <a href="raider.html">Raider Team</a>
+          <a href="colorguard.html">Color Guard</a>
+          <a href="drill.html">Drill Team</a>
+          <a href="rifle.html">Rifle Team</a>
+          <a href="sabre.html">Sabre Team</a>
+          <a href="fitness.html">Fitness Team</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="team-hero">
+    <div class="team-hero-content">
+      <h1>Upcoming Events</h1>
+      <p class="team-motto">Excellence in Every Competition</p>
+      <p class="team-description">Stay informed about competitions, training events, and ceremonial duties throughout the year.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-container">
+    <!-- Next Event Highlight -->
+    <section class="event-highlight">
+      <h3>Next Event: Etowah Early Eagle Raider Challenge – Aug 30</h3>
+      <p>Join us at 0730 for the first competition of the season. Breakfast will be provided at 0500, bus leaves at 0530. 
+        Distance to event is 90 miles.</p>
+    </section>
+
+    <!-- Quick Training Schedule -->
+    <section class="team-stats">
+      <div class="stat-item">
+        <div class="stat-number">Tue</div>
+        <div class="stat-label">Color Guard Practice 2PM</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Tue/Thu</div>
+        <div class="stat-label">Raider Camp 1030-1200</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Weekly</div>
+        <div class="stat-label">Team Training</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Year-Round</div>
+        <div class="stat-label">Competitions</div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <div class="section-header">
+      <h2>Competition Calendar</h2>
+    </div>
+    
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-running"></i>
+        </div>
+        <h3>Raider Competitions</h3>
+        <p><strong>Season:</strong> August - November</p>
+        <p>Physical challenges including obstacle courses, team runs, rope bridge construction, and fitness tests across the region.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Next Event:</strong> Etowah Early Eagle Challenge - Aug 30
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-flag-usa"></i>
+        </div>
+        <h3>Color Guard Ceremonies</h3>
+        <p><strong>Season:</strong> Year-Round</p>
+        <p>Flag presentations at school events, community ceremonies, sporting events, and formal military occasions.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Training:</strong> Every Tuesday at 2:00 PM
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Drill Competitions</h3>
+        <p><strong>Season:</strong> Fall - Spring</p>
+        <p>Precision marching competitions featuring regulation drill and exhibition routines showcasing teamwork and discipline.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Focus:</strong> Precision & Exhibition Drill
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Rifle Competitions</h3>
+        <p><strong>Season:</strong> Fall - Winter</p>
+        <p>Marksmanship competitions emphasizing safety, accuracy, and disciplined shooting techniques with air rifles.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Range:</strong> 10-meter precision shooting
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-sword"></i>
+        </div>
+        <h3>Sabre Ceremonies</h3>
+        <p><strong>Season:</strong> Year-Round</p>
+        <p>Honor guard duties for weddings, graduations, military balls, and special ceremonial occasions requiring sabre arch formations.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Service:</strong> Ceremonial Honor Guard
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <h3>Fitness Challenges</h3>
+        <p><strong>Season:</strong> Year-Round</p>
+        <p>Physical training events, obstacle courses, and fitness competitions building strength, endurance, and team cohesion.</p>
+        <div class="military-border" style="margin-top: 1rem; padding: 0.5rem;">
+          <strong>Focus:</strong> PT Standards & Team Building
+        </div>
       </div>
     </div>
-  </nav>
-</header>
 
-  <main>
-    <h2>Upcoming Events</h2>
-    <section class="event-highlight">
-  <h3>Next Event: Etowah Early Eagle Raider Challenge – Aug 30</h3>
-  <p>Join us at 0730 for the first competition of the season. Breakfast will be provided at 0500, bus leaves at 0530. 
-    Distance to event is 90 miles.</p>
-</section>
-    <ul>
-      <li><strong>Color Guard Practice:</strong> Tuesdays at 2PM</li>
-      <li><strong>Raider Summer Camp:</strong>Tuesdays and Thursdays 1030-1200</li>
-    </ul>
-    <p>Check back soon for more updates.</p>
-    <h2>Calendar of Events</h2>
+    <!-- Community Service Events -->
+    <div class="section-header">
+      <h2>Community Service</h2>
+    </div>
+    
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Food Drives</h3>
+        <p>Annual food collection drives supporting local food banks and the Chattanooga Salvation Army, collecting thousands of items for families in need.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-gift"></i>
+        </div>
+        <h3>Holiday Support</h3>
+        <p>Gift wrapping for Chattanooga Kids on the Block and participation in the Stocking Full of Love program during the holiday season.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-road"></i>
+        </div>
+        <h3>Highway Cleanup</h3>
+        <p>Regular highway cleanup projects maintaining community pride and environmental stewardship throughout the year.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Senior Citizens Support</h3>
+        <p>Visits and assistance programs for local senior citizens, building intergenerational connections and community bonds.</p>
+      </div>
+    </div>
+
+    <!-- Calendar Integration -->
+    <div class="section-header">
+      <h2>Full Event Calendar</h2>
+    </div>
+    
+    <div style="background: rgba(0, 0, 0, 0.8); padding: 2rem; border-radius: 4px; border: 1px solid rgba(192, 192, 192, 0.3); margin: 2rem 0;">
       <iframe src="https://calendar.google.com/calendar/embed?src=jameswarren%40walkerschools.org&ctz=America%2FNew_York"
-        style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-  </main>
+        style="border: 0; border-radius: 4px;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
 
+    <!-- Important Reminders -->
+    <div class="section-header">
+      <h2>Important Reminders</h2>
+    </div>
+    
+    <div class="event-highlight" style="text-align: left;">
+      <h3>For All Events:</h3>
+      <ul style="text-align: left; margin: 1rem 0; padding-left: 2rem;">
+        <li><strong>Arrive Early:</strong> Report 30 minutes before scheduled departure</li>
+        <li><strong>Proper Uniform:</strong> Complete uniform inspection required</li>
+        <li><strong>Bring Essentials:</strong> Water, snacks, and any required equipment</li>
+        <li><strong>Positive Attitude:</strong> Represent the Panther Battalion with pride</li>
+        <li><strong>Liability Waivers:</strong> Required for all competitive events</li>
+      </ul>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="files/Waiver_of_Liability.pdf" class="btn" target="_blank">Download Waiver Form</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Virtus Per Adversitatem – Strength Through Adversity</p>
+    <p><strong>Virtus Per Adversitatem – Strength Through Adversity</strong></p>
     <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
-      <div class="social-links">
+
+    <div class="social-links">
       <a href="https://www.facebook.com/profile.php?id=61576914316996" target="_blank" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
     <p>Follow us on social media for updates and events!</p>
   </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effects for header
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const header = document.querySelector('header');
+      
+      if (scrolled > 100) {
+        header.style.background = 'rgba(0, 0, 0, 0.98)';
+        header.style.borderBottomColor = '#FFFFFF';
+      } else {
+        header.style.background = 'rgba(0, 0, 0, 0.95)';
+        header.style.borderBottomColor = '#C0C0C0';
+      }
+    });
+
+    // Add entrance animations for cards
+    const cards = document.querySelectorAll('.event-card, .highlight-card, .stat-item');
+    cards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, index * 100);
+    });
+
+    // Event countdown timer for next event
+    const nextEventDate = new Date('2025-08-30T07:30:00');
+    
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = nextEventDate - now;
+      
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        
+        const eventHighlight = document.querySelector('.event-highlight');
+        if (eventHighlight && days > 0) {
+          const countdownElement = document.createElement('div');
+          countdownElement.style.cssText = 'margin-top: 1rem; font-size: 1.2rem; color: #C0C0C0; font-weight: bold;';
+          countdownElement.textContent = `⏰ ${days} days and ${hours} hours until event`;
+          
+          if (!eventHighlight.querySelector('.countdown')) {
+            countdownElement.classList.add('countdown');
+            eventHighlight.appendChild(countdownElement);
+          }
+        }
+      }
+    }
+    
+    // Update countdown on page load
+    updateCountdown();
+    
+    // Update countdown every hour
+    setInterval(updateCountdown, 3600000);
+  </script>
 </body>
 </html>

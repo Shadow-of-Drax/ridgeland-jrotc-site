@@ -1,121 +1,1376 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rifle Team | Ridgeland JROTC</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
     }
-    .team-card {
-      background-color: rgba(0, 0, 0, 0.6);
-      border: 1px solid #808080;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
+
+    ::-webkit-scrollbar-thumb {
+      background: #C0C0C0;
+      border-radius: 4px;
     }
-    .team-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 6px;
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FFFFFF;
     }
   </style>
 </head>
 <body>
+  <!-- HEADER - Matching Homepage -->
   <header>
-  <div class="header-title">
-    <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
-    <h1 class="site-title">Ridgeland JROTC</h1>
-    <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
-  </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-    <a href="parents-cadets.html">Parents & Cadets</a>
-    <a href="contact.html">Contact</a>
-    <div class="dropdown">
-      <button class="dropbtn">Teams ▾</button>
-      <div class="dropdown-content">
-        <a href="raider.html">Raider Team</a>
-        <a href="colorguard.html">Color Guard</a>
-        <a href="drill.html">Drill Team</a>
-        <a href="rifle.html">Rifle Team</a>
-        <a href="sabre.html">Sabre Team</a>
-        <a href="fitness.html">Fitness Team</a>
-      </div>
-    </div>
-  </nav>
-</header>
-
-  <main>
-    <h2>Rifle Team</h2>
-    <p>Rifle Team competes in marksmanship events emphasizing safety and accuracy.</p>
-
-    <h3>Season</h3>
-    <p>Fall - Winter</p>
-
-    <h3>Events</h3>
-    <ul>
-      <li>Air Rifle Competitions</li><li>Marksmanship Training</li>
-    </ul>
-
-    <h3>Meet the Team</h3>
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="images/placeholder.jpg" alt="Team Member">
-        <h4>Cadet Name</h4>
-        <p>Position</p>
-      </div>
-      <div class="team-card">
-        <img src="images/placeholder.jpg" alt="Team Member">
-        <h4>Cadet Name</h4>
-        <p>Position</p>
-      </div>
+    <div class="header-title">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDUkVTVAogIDwvdGV4dD4KPC9zdmc+" alt="Ridgeland Crest" class="header-icon">
+      <h1 class="site-title">Ridgeland JROTC</h1>
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0MwQzBDMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDAiPgogICAgSlJPVEMKICAgIENSRVNUCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="JROTC Crest" class="header-icon">
     </div>
 
-    <section class="gallery">
-      <h2>Rifle Gallery</h2>
-      <div class="gallery-grid" id="rifle-gallery"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="parents-cadets.html">Parents & Cadets</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams ▾</button>
+        <div class="dropdown-content">
+          <a href="raider.html">Raider Team</a>
+          <a href="colorguard.html">Color Guard</a>
+          <a href="drill.html">Drill Team</a>
+          <a href="rifle.html" class="active">Rifle Team</a>
+          <a href="sabre.html">Sabre Team</a>
+          <a href="fitness.html">Fitness Team</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TEAM HERO SECTION -->
+  <section class="team-hero">
+    <div class="team-hero-content">
+      <h1>Rifle Team</h1>
+      <p class="team-motto">"Accuracy Through Discipline"</p>
+      <p class="team-description">Precision marksmanship training emphasizing safety, discipline, and competitive excellence. Building focus, concentration, and the fundamental skills of responsible firearm handling.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-container">
+    <!-- Team Stats -->
+    <section class="team-stats">
+      <div class="stat-item">
+        <div class="stat-number">15</div>
+        <div class="stat-label">Team Members</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Fall-Winter</div>
+        <div class="stat-label">Competition Season</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10M</div>
+        <div class="stat-label">Range Distance</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">600</div>
+        <div class="stat-label">Perfect Score</div>
+      </div>
     </section>
 
-    <!-- Load gallery script -->
-    <script src="js/gallery.js"></script>
+    <!-- Safety First Section -->
+    <div class="safety-section">
+      <h3>Safety First - Four Fundamental Rules</h3>
+      <div class="safety-rules">
+        <div class="safety-rule">
+          <div class="rule-number">1</div>
+          <h4>Treat Every Rifle as Loaded</h4>
+          <p>Always handle every firearm as if it were loaded, regardless of its actual condition.</p>
+        </div>
+        <div class="safety-rule">
+          <div class="rule-number">2</div>
+          <h4>Never Point at Anything You Don't Want to Destroy</h4>
+          <p>Maintain proper muzzle control at all times during handling and transport.</p>
+        </div>
+        <div class="safety-rule">
+          <div class="rule-number">3</div>
+          <h4>Keep Finger Off Trigger</h4>
+          <p>Finger remains outside the trigger guard until ready to fire on target.</p>
+        </div>
+        <div class="safety-rule">
+          <div class="rule-number">4</div>
+          <h4>Know Your Target and Beyond</h4>
+          <p>Be certain of your target and what lies beyond it before firing.</p>
+        </div>
+      </div>
+    </div>
 
-    <h3>Waiver</h3>
-    <p><a href="files/Waiver_of_Liability.pdf" class="btn" target="_blank">Download Waiver of Liability Form (PDF)</a></p>
-  </main>
+    <!-- Equipment Showcase -->
+    <div class="section-header">
+      <h2>Equipment & Training</h2>
+    </div>
+    
+    <div class="equipment-grid">
+      <div class="equipment-card">
+        <div class="equipment-icon">
+          <i class="fas fa-crosshairs"></i>
+        </div>
+        <h3>Precision Air Rifles</h3>
+        <p>Competition-grade air rifles designed for accuracy and consistency in marksmanship training.</p>
+        <div class="equipment-specs">
+          <h4>Specifications</h4>
+          <ul>
+            <li>Caliber: .177 (4.5mm) pellets</li>
+            <li>Single-shot, bolt-action</li>
+            <li>Adjustable trigger system</li>
+            <li>Precision aperture sights</li>
+            <li>Competition-legal design</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="equipment-card">
+        <div class="equipment-icon">
+          <i class="fas fa-eye"></i>
+        </div>
+        <h3>Precision Sights</h3>
+        <p>Advanced sight systems for maximum accuracy and consistent target acquisition.</p>
+        <div class="equipment-specs">
+          <h4>Features</h4>
+          <ul>
+            <li>Adjustable aperture rear sights</li>
+            <li>Competition front sight posts</li>
+            <li>Click-adjustable windage/elevation</li>
+            <li>Precision sight alignment tools</li>
+            <li>Competition-approved optics</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="equipment-card">
+        <div class="equipment-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Safety Equipment</h3>
+        <p>Comprehensive safety gear ensuring secure training environment for all participants.</p>
+        <div class="equipment-specs">
+          <h4>Safety Gear</h4>
+          <ul>
+            <li>Eye protection (shooting glasses)</li>
+            <li>Hearing protection</li>
+            <li>Range safety flags</li>
+            <li>Secure rifle storage systems</li>
+            <li>First aid stations</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="equipment-card">
+        <div class="equipment-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <h3>Training Targets</h3>
+        <p>Official competition targets and training aids for skill development and scoring.</p>
+        <div class="equipment-specs">
+          <h4>Target Types</h4>
+          <ul>
+            <li>Official 10-meter air rifle targets</li>
+            <li>Precision scoring rings</li>
+            <li>Electronic scoring systems</li>
+            <li>Training progression targets</li>
+            <li>Competition-standard scoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Competition Scoring -->
+    <div class="scoring-section">
+      <h3>Competition Scoring System</h3>
+      <div class="scoring-grid">
+        <div class="score-zone">
+          <div class="zone-number">10</div>
+          <div class="zone-description">Bull's Eye - Center Ring</div>
+        </div>
+        <div class="score-zone">
+          <div class="zone-number">9</div>
+          <div class="zone-description">Inner Ring - High Score</div>
+        </div>
+        <div class="score-zone">
+          <div class="zone-number">8</div>
+          <div class="zone-description">Second Ring - Good Shot</div>
+        </div>
+        <div class="score-zone">
+          <div class="zone-number">7</div>
+          <div class="zone-description">Third Ring - Fair Shot</div>
+        </div>
+        <div class="score-zone">
+          <div class="zone-number">6</div>
+          <div class="zone-description">Fourth Ring - Basic Score</div>
+        </div>
+        <div class="score-zone">
+          <div class="zone-number">0-5</div>
+          <div class="zone-description">Outer Rings - Training Zone</div>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 2rem; color: #A0A0A0; position: relative; z-index: 2;">
+        <strong>Competition Format:</strong> 60 shots maximum score = 600 points
+      </p>
+    </div>
+
+    <!-- Team Leadership -->
+    <div class="section-header">
+      <h2>Meet the Marksmen</h2>
+    </div>
+    
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Team Captain">
+        <h4>Cadet Captain</h4>
+        <p class="position">Team Captain</p>
+        <p class="specialty">Competition Lead</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Safety Officer">
+        <h4>Cadet Lieutenant</h4>
+        <p class="position">Safety Officer</p>
+        <p class="specialty">Range Safety</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Equipment Manager">
+        <h4>Cadet Sergeant</h4>
+        <p class="position">Equipment Manager</p>
+        <p class="specialty">Maintenance & Setup</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Score Keeper">
+        <h4>Cadet Corporal</h4>
+        <p class="position">Score Keeper</p>
+        <p class="specialty">Competition Scoring</p>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section-header">
+      <h2>Training Gallery</h2>
+    </div>
+    
+    <div class="gallery-section">
+      <div class="gallery-grid" id="rifle-gallery">
+        <!-- Placeholder gallery items -->
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgTUFSS1NNQU5TSElQCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Marksmanship Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgQ09NUEVUSVRJT04KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Competition">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgU0FGRVRZIFRSQUlOSU5HCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Safety Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgUFJFQ0lTSU9OIFNIT09USU5HCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Precision Shooting">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgRVFVSVBNRU5UIENBUkUKICA8L3RleHQ+Cjwvc3ZnPg==" alt="Equipment Care">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgQVdBUkRTIENFUkVNT05ZCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Awards Ceremony">
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+      <h3>Join the Marksmen</h3>
+      <p>Develop focus, discipline, and precision through competitive marksmanship. All skill levels welcome - safety training provided.</p>
+      <a href="files/Waiver_of_Liability.pdf" target="_blank" class="btn">Download Waiver</a>
+      <a href="contact.html" class="btn">Contact Instructors</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Virtus Per Adversitatem – Strength Through Adversity</p>
+    <p><strong>Virtus Per Adversitatem – Strength Through Adversity</strong></p>
     <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
-      <div class="social-links">
+
+    <div class="social-links">
       <a href="https://www.facebook.com/profile.php?id=61576914316996" target="_blank" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
     <p>Follow us on social media for updates and events!</p>
   </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effects for header
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const header = document.querySelector('header');
+      
+      if (scrolled > 100) {
+        header.style.background = 'rgba(0, 0, 0, 0.98)';
+        header.style.borderBottomColor = '#FFFFFF';
+      } else {
+        header.style.background = 'rgba(0, 0, 0, 0.95)';
+        header.style.borderBottomColor = '#C0C0C0';
+      }
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.7,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transform = 'translateY(0)';
+          entry.target.style.opacity = '1';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards for entrance animations
+    const cards = document.querySelectorAll('.stat-item, .equipment-card, .team-card, .gallery-item, .safety-rule, .score-zone');
+    cards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      
+      setTimeout(() => {
+        observer.observe(card);
+      }, index * 50);
+    });
+
+    // Gallery lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    galleryItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Create lightbox overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+          cursor: pointer;
+        `;
+        
+        const img = document.createElement('img');
+        img.src = this.src;
+        img.style.cssText = `
+          max-width: 90%;
+          max-height: 90%;
+          border: 3px solid #C0C0C0;
+          border-radius: 4px;
+        `;
+        
+        overlay.appendChild(img);
+        document.body.appendChild(overlay);
+        
+        // Close on click
+        overlay.addEventListener('click', () => {
+          document.body.removeChild(overlay);
+        });
+      });
+    });
+
+        this.style.background = 'rgba(192, 192, 192, 0.15)';
+        this.style.transform = 'translateY(-5px)';
+        this.style.boxShadow = '0 10px 20px rgba(192, 192, 192, 0.2)';
+      });
+      
+      rule.addEventListener('mouseleave', function() {
+        this.style.background = 'rgba(192, 192, 192, 0.1)';
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'none';
+      });
+    });
+
+    // Score zone hover effects
+    const scoreZones = document.querySelectorAll('.score-zone');
+    scoreZones.forEach(zone => {
+      zone.addEventListener('mouseenter', function() {
+        this.style.background = 'rgba(192, 192, 192, 0.15)';
+        this.style.transform = 'scale(1.05)';
+      });
+      
+      zone.addEventListener('mouseleave', function() {
+        this.style.background = 'rgba(192, 192, 192, 0.1)';
+        this.style.transform = 'scale(1)';
+      });
+    });
+
+    // Add loading animation for page
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // Target crosshair animation enhancement
+    const hero = document.querySelector('.team-hero');
+    hero.addEventListener('mousemove', (e) => {
+      const rect = hero.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      
+      hero.style.setProperty('--mouse-x', x + '%');
+      hero.style.setProperty('--mouse-y', y + '%');
+    });
+
+    // Equipment card special effects
+    const equipmentCards = document.querySelectorAll('.equipment-card');
+    equipmentCards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        const icon = this.querySelector('.equipment-icon i');
+        if (icon) {
+          icon.style.transform = 'scale(1.2) rotate(10deg)';
+          icon.style.transition = 'transform 0.3s ease';
+        }
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        const icon = this.querySelector('.equipment-icon i');
+        if (icon) {
+          icon.style.transform = 'scale(1) rotate(0deg)';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rifle Team | Ridgeland JROTC - Panther Battalion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Global Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+      color: #C0C0C0;
+      min-height: 100vh;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Enhanced Header - Matching Homepage */
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      background: rgba(0, 0, 0, 0.95);
+      border-bottom: 3px solid #C0C0C0;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(15px);
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .header-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      animation: fadeInScale 1s ease-out 0.3s both;
+    }
+
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .header-title .site-title {
+      font-size: 3.5rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+      animation: silverGlow 2s ease-in-out infinite alternate;
+      font-family: 'Arial Black', Arial, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    @keyframes silverGlow {
+      from { text-shadow: 0 0 20px rgba(192, 192, 192, 0.5); }
+      to { text-shadow: 0 0 30px rgba(192, 192, 192, 0.8), 0 0 40px rgba(255, 255, 255, 0.3); }
+    }
+
+    .header-icon {
+      height: 120px;
+      width: auto;
+      max-width: 200px;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0 0 10px rgba(192, 192, 192, 0.3));
+    }
+
+    .header-icon:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    /* Enhanced Navigation - Matching Homepage */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      animation: slideUp 0.8s ease-out 0.5s both;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav a {
+      color: #C0C0C0;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    nav a:hover::before {
+      left: 100%;
+    }
+
+    nav a:hover, nav a.active {
+      color: #FFFFFF;
+      background: rgba(192, 192, 192, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(192, 192, 192, 0.3);
+      border: 1px solid rgba(192, 192, 192, 0.3);
+    }
+
+    /* Dropdown Enhancement */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      color: #C0C0C0;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.95);
+      min-width: 180px;
+      border-radius: 4px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      z-index: 1001;
+      animation: dropdownSlide 0.3s ease-out;
+    }
+
+    @keyframes dropdownSlide {
+      from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+      to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+
+    .dropdown-content a {
+      color: #C0C0C0;
+      padding: 1rem;
+      text-decoration: none;
+      display: block;
+      border-radius: 8px;
+      margin: 0.25rem;
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background: rgba(192, 192, 192, 0.1);
+      color: #FFFFFF;
+      transform: translateX(5px);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      color: #FFFFFF;
+      background: rgba(192, 192, 192, 0.1);
+      border: 1px solid rgba(192, 192, 192, 0.3);
+    }
+
+    /* Team Hero Section - Precision Theme */
+    .team-hero {
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(45deg, #000000, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Precision crosshair background elements */
+    .team-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(90deg, transparent 49%, rgba(192, 192, 192, 0.05) 50%, transparent 51%),
+        linear-gradient(0deg, transparent 49%, rgba(192, 192, 192, 0.05) 50%, transparent 51%);
+      animation: targetPulse 4s ease-in-out infinite alternate;
+      z-index: 1;
+    }
+
+    @keyframes targetPulse {
+      from { opacity: 0.3; }
+      to { opacity: 0.7; }
+    }
+
+    /* Marksmanship target rings */
+    .team-hero::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      transform: translate(-50%, -50%);
+      background: 
+        radial-gradient(circle at center, transparent 40px, rgba(192, 192, 192, 0.03) 42px, transparent 44px),
+        radial-gradient(circle at center, transparent 80px, rgba(192, 192, 192, 0.03) 82px, transparent 84px),
+        radial-gradient(circle at center, transparent 120px, rgba(192, 192, 192, 0.03) 122px, transparent 124px);
+      opacity: 0.6;
+      z-index: 1;
+      animation: targetRotate 20s linear infinite;
+    }
+
+    @keyframes targetRotate {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .team-hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 800px;
+      padding: 2rem;
+      animation: heroFadeIn 1.5s ease-out;
+    }
+
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .team-hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+      font-family: 'Arial Black', Arial, sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .team-hero .team-motto {
+      font-size: 1.3rem;
+      color: #E0E0E0;
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-family: 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    .team-hero .team-description {
+      font-size: 1.1rem;
+      color: #C0C0C0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Main Content Container */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Team Stats Section */
+    .team-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .stat-item {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .stat-item:hover::before {
+      left: 100%;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(192, 192, 192, 0.2);
+      border-color: #C0C0C0;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .stat-label {
+      color: #A0A0A0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+      position: relative;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #C0C0C0;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .section-header::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #C0C0C0, transparent);
+    }
+
+    /* Safety First Section */
+    .safety-section {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 3rem 2rem;
+      margin: 3rem 0;
+      border: 2px solid rgba(192, 192, 192, 0.5);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .safety-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 40%, rgba(255, 0, 0, 0.02) 50%, transparent 60%);
+      opacity: 0.8;
+    }
+
+    .safety-section h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: #C0C0C0;
+      margin-bottom: 2rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .safety-rules {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .safety-rule {
+      background: rgba(192, 192, 192, 0.1);
+      padding: 1.5rem;
+      border-radius: 4px;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .safety-rule:hover {
+      background: rgba(192, 192, 192, 0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(192, 192, 192, 0.2);
+    }
+
+    .safety-rule .rule-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .safety-rule h4 {
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Equipment Showcase */
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .equipment-card {
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(192, 192, 192, 0.2);
+      border-radius: 4px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .equipment-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .equipment-card:hover::before {
+      left: 100%;
+    }
+
+    .equipment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(192, 192, 192, 0.2);
+      border-color: #C0C0C0;
+    }
+
+    .equipment-card h3 {
+      color: #C0C0C0;
+      margin-bottom: 1rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .equipment-card .equipment-icon {
+      font-size: 2.5rem;
+      color: #C0C0C0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .equipment-specs {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(192, 192, 192, 0.2);
+    }
+
+    .equipment-specs h4 {
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .equipment-specs ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .equipment-specs li {
+      color: #A0A0A0;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .equipment-specs li::before {
+      content: '▪';
+      color: #C0C0C0;
+      position: absolute;
+      left: 0;
+    }
+
+    /* Competition Scoring Section */
+    .scoring-section {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 3rem 2rem;
+      margin: 3rem 0;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scoring-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 40%, rgba(192, 192, 192, 0.03) 50%, transparent 60%);
+      opacity: 0.8;
+    }
+
+    .scoring-section h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: #C0C0C0;
+      margin-bottom: 2rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .scoring-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .score-zone {
+      background: rgba(192, 192, 192, 0.1);
+      padding: 1.5rem;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .score-zone:hover {
+      background: rgba(192, 192, 192, 0.15);
+      transform: scale(1.05);
+    }
+
+    .score-zone .zone-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+    }
+
+    .score-zone .zone-description {
+      color: #A0A0A0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Team Member Grid */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .team-card {
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .team-card:hover::before {
+      left: 100%;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(192, 192, 192, 0.2);
+      border-color: #C0C0C0;
+    }
+
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #C0C0C0;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+
+    .team-card:hover img {
+      border-color: #FFFFFF;
+      box-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
+    }
+
+    .team-card h4 {
+      color: #C0C0C0;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .team-card .position {
+      color: #A0A0A0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-card .specialty {
+      color: #808080;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      margin: 3rem 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid rgba(192, 192, 192, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(192, 192, 192, 0.3);
+      border-color: #C0C0C0;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:hover video {
+      transform: scale(1.1);
+    }
+
+    /* Call-to-Action Section */
+    .cta-section {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 3rem 0;
+      border: 1px solid rgba(192, 192, 192, 0.3);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 40%, rgba(192, 192, 192, 0.05) 50%, transparent 60%);
+      opacity: 0.8;
+    }
+
+    .cta-section h3 {
+      font-size: 2rem;
+      color: #C0C0C0;
+      margin-bottom: 1rem;
+      font-family: 'Arial Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      color: #A0A0A0;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #C0C0C0, #FFFFFF);
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(192, 192, 192, 0.3);
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid rgba(192, 192, 192, 0.5);
+      z-index: 2;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(192, 192, 192, 0.5);
+    }
+
+    /* Footer - Matching Homepage */
+    footer {
+      background: rgba(0, 0, 0, 0.95);
+      text-align: center;
+      padding: 2rem;
+      border-top: 3px solid #C0C0C0;
+      margin-top: 4rem;
+    }
+
+    .social-links {
+      margin: 1rem 0;
+    }
+
+    .social-links a {
+      color: #C0C0C0;
+      font-size: 1.8rem;
+      margin: 0 1rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .social-links a:hover {
+      color: #FFFFFF;
+      transform: translateY(-3px) scale(1.2);
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .header-icon {
+        height: 80px;
+        max-width: 120px;
+      }
+      
+      .header-title .site-title {
+        font-size: 2.5rem;
+      }
+      
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .team-hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .safety-rules {
+        grid-template-columns: 1fr;
+      }
+      
+      .scoring-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .main-container {
+        padding: 1rem;
+      }
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    :
