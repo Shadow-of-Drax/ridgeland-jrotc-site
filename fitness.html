@@ -1,651 +1,4 @@
-    .social-links a:hover {
-      color: #FFFFFF;
-      transform: translateY(-3px) scale(1.2);
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    }
-
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-      .header-icon {
-        height: 80px;
-        max-width: 120px;
-      }
-      
-      .header-title .site-title {
-        font-size: 2.5rem;
-      }
-      
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      
-      .team-hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .team-stats {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .pt-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .workout-schedule {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .main-container {
-        padding: 1rem;
-      }
-    }
-
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #1a1a1a;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #C0C0C0;
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #FFFFFF;
-    }
-  </style>
-</head>
-<body>
-  <!-- HEADER - Matching Homepage -->
-  <header>
-    <div class="header-title">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDUkVTVAogIDwvdGV4dD4KPC9zdmc+" alt="Ridgeland Crest" class="header-icon">
-      <h1 class="site-title">Ridgeland JROTC</h1>
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0MwQzBDMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDAiPgogICAgSlJPVEMKICAgIENSRVNUCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="JROTC Crest" class="header-icon">
-    </div>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="events.html">Events</a>
-      <a href="parents-cadets.html">Parents & Cadets</a>
-      <a href="contact.html">Contact</a>
-      <div class="dropdown">
-        <button class="dropbtn">Teams ▾</button>
-        <div class="dropdown-content">
-          <a href="raider.html">Raider Team</a>
-          <a href="colorguard.html">Color Guard</a>
-          <a href="drill.html">Drill Team</a>
-          <a href="rifle.html">Rifle Team</a>
-          <a href="sabre.html">Sabre Team</a>
-          <a href="fitness.html" class="active">Fitness Team</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- TEAM HERO SECTION -->
-  <section class="team-hero">
-    <div class="team-hero-content">
-      <h1>Fitness Team</h1>
-      <p class="team-motto">"Strength Through Training"</p>
-      <p class="team-description">Building physical and mental toughness through structured fitness programs, obstacle courses, and team conditioning. Developing the foundation of strength that supports all JROTC activities.</p>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <div class="main-container">
-    <!-- Team Stats -->
-    <section class="team-stats">
-      <div class="stat-item">
-        <div class="stat-number">20+</div>
-        <div class="stat-label">Active Members</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">Year-Round</div>
-        <div class="stat-label">Training Schedule</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">5</div>
-        <div class="stat-label">Weekly Workouts</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">12</div>
-        <div class="stat-label">Obstacle Events</div>
-      </div>
-    </section>
-
-    <!-- PT Standards -->
-    <div class="pt-standards">
-      <h3>Army Physical Training Standards</h3>
-      <div class="pt-grid">
-        <div class="pt-exercise">
-          <div class="exercise-icon">
-            <i class="fas fa-running"></i>
-          </div>
-          <h4>Push-Ups</h4>
-          <p>Upper body strength and endurance development through progressive training programs.</p>
-          <div class="standards">
-            <h5>Target Goals</h5>
-            <ul class="standards-list">
-              <li>Beginner: 15-25 reps</li>
-              <li>Intermediate: 30-45 reps</li>
-              <li>Advanced: 50+ reps</li>
-              <li>Perfect form required</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="pt-exercise">
-          <div class="exercise-icon">
-            <i class="fas fa-dumbbell"></i>
-          </div>
-          <h4>Sit-Ups</h4>
-          <p>Core strength and abdominal muscle development for overall fitness foundation.</p>
-          <div class="standards">
-            <h5>Target Goals</h5>
-            <ul class="standards-list">
-              <li>Beginner: 20-35 reps</li>
-              <li>Intermediate: 40-55 reps</li>
-              <li>Advanced: 60+ reps</li>
-              <li>2-minute time limit</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="pt-exercise">
-          <div class="exercise-icon">
-            <i class="fas fa-stopwatch"></i>
-          </div>
-          <h4>2-Mile Run</h4>
-          <p>Cardiovascular endurance and stamina building through progressive running programs.</p>
-          <div class="standards">
-            <h5>Target Times</h5>
-            <ul class="standards-list">
-              <li>Beginner: 18-20 minutes</li>
-              <li>Intermediate: 15-17 minutes</li>
-              <li>Advanced: Under 15 minutes</li>
-              <li>Steady pace maintenance</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="pt-exercise">
-          <div class="exercise-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <h4>Body Composition</h4>
-          <p>Overall health assessment including weight management and body fat percentage.</p>
-          <div class="standards">
-            <h5>Health Metrics</h5>
-            <ul class="standards-list">
-              <li>BMI within healthy range</li>
-              <li>Body fat percentage goals</li>
-              <li>Nutritional awareness</li>
-              <li>Hydration standards</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Training Events -->
-    <div class="section-header">
-      <h2>Training Programs</h2>
-    </div>
-    
-    <div class="events-grid">
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-route"></i>
-        </div>
-        <h3>Obstacle Courses</h3>
-        <p>Navigate challenging military-style obstacle courses designed to build agility, strength, and mental toughness through varied terrain.</p>
-      </div>
-      
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-trophy"></i>
-        </div>
-        <h3>PT Challenges</h3>
-        <p>Competitive physical training events testing individual and team fitness levels across multiple exercise categories.</p>
-      </div>
-      
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3>Team Building</h3>
-        <p>Group fitness activities that combine physical training with teamwork, communication, and leadership development.</p>
-      </div>
-      
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-mountain"></i>
-        </div>
-        <h3>Outdoor Training</h3>
-        <p>Field training exercises incorporating hiking, orienteering, and survival skills in natural environments.</p>
-      </div>
-      
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-weight-hanging"></i>
-        </div>
-        <h3>Strength Training</h3>
-        <p>Progressive weight training and resistance exercises to build functional strength and prevent injuries.</p>
-      </div>
-      
-      <div class="event-card">
-        <div class="event-icon">
-          <i class="fas fa-apple-alt"></i>
-        </div>
-        <h3>Nutrition Education</h3>
-        <p>Learning proper nutrition, hydration, and recovery techniques to support optimal physical performance and health.</p>
-      </div>
-    </div>
-
-    <!-- Weekly Workout Schedule -->
-    <div class="workout-program">
-      <div class="section-header">
-        <h2>Weekly Training Schedule</h2>
-      </div>
-      <div class="workout-schedule">
-        <div class="workout-day">
-          <div class="day-name">Monday</div>
-          <div class="focus-area">Upper Body Strength</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Tuesday</div>
-          <div class="focus-area">Cardio & Endurance</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Wednesday</div>
-          <div class="focus-area">Core & Flexibility</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Thursday</div>
-          <div class="focus-area">Lower Body Power</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Friday</div>
-          <div class="focus-area">Team Challenges</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Saturday</div>
-          <div class="focus-area">Outdoor Training</div>
-        </div>
-        <div class="workout-day">
-          <div class="day-name">Sunday</div>
-          <div class="focus-area">Recovery & Rest</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Motivation Quote Section -->
-    <div class="motivation-section">
-      <p class="motivation-quote">"The groundwork for all happiness is good health."</p>
-      <p class="quote-author">- Leigh Hunt</p>
-    </div>
-
-    <!-- Team Leadership -->
-    <div class="section-header">
-      <h2>Fitness Leaders</h2>
-    </div>
-    
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Fitness Leader">
-        <h4>Cadet Captain</h4>
-        <p class="position">Fitness Team Leader</p>
-        <p class="specialty">Program Coordinator</p>
-      </div>
-      
-      <div class="team-card">
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="PT Instructor">
-        <h4>Cadet Lieutenant</h4>
-        <p class="position">PT Instructor</p>
-        <p class="specialty">Training Programs</p>
-      </div>
-      
-      <div class="team-card">
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Nutrition Advisor">
-        <h4>Cadet Sergeant</h4>
-        <p class="position">Nutrition Advisor</p>
-        <p class="specialty">Health & Wellness</p>
-      </div>
-      
-      <div class="team-card">
-        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Equipment Manager">
-        <h4>Cadet Corporal</h4>
-        <p class="position">Equipment Manager</p>
-        <p class="specialty">Safety & Gear</p>
-      </div>
-    </div>
-
-    <!-- Gallery Section -->
-    <div class="section-header">
-      <h2>Training Gallery</h2>
-    </div>
-    
-    <div class="gallery-section">
-      <div class="gallery-grid" id="fitness-gallery">
-        <!-- Placeholder gallery items -->
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgT0JTVEFDTEVTCIAGPC90ZXh0Pgo8L3N2Zz4=" alt="Obstacle Training">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgU1RSRU5HVEggVFJBSU5JTkcKICA8L3RleHQ+Cjwvc3ZnPg==" alt="Strength Training">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgQ0FSRElPIFRSQUlOSU5HCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Cardio Training">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Vtd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgVEVBTSBDSEFMTEVOR0VTCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Team Challenges">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgT1VURF9PSiBUUkFJTklORwogIDwvdGV4dD4KPC9zdmc+" alt="Outdoor Training">
-        </div>
-        
-        <div class="gallery-item">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgRklUTkVTUyBBV0FSRFMKICA8L3RleHQ+Cjwvc3ZnPg==" alt="Fitness Awards">
-        </div>
-      </div>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="cta-section">
-      <h3>Build Your Strength</h3>
-      <p>Join the Fitness Team and develop the physical and mental toughness that will serve you throughout life. All fitness levels welcome - we'll help you reach your goals.</p>
-      <a href="files/Waiver_of_Liability.pdf" target="_blank" class="btn">Download Waiver</a>
-      <a href="contact.html" class="btn">Get Started</a>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p><strong>Virtus Per Adversitatem – Strength Through Adversity</strong></p>
-    <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
-
-    <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61576914316996" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-    <p>Follow us on social media for updates and events!</p>
-  </footer>
-
-  <script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Add scroll effects for header
-    window.addEventListener('scroll', () => {
-      const scrolled = window.pageYOffset;
-      const header = document.querySelector('header');
-      
-      if (scrolled > 100) {
-        header.style.background = 'rgba(0, 0, 0, 0.98)';
-        header.style.borderBottomColor = '#FFFFFF';
-      } else {
-        header.style.background = 'rgba(0, 0, 0, 0.95)';
-        header.style.borderBottomColor = '#C0C0C0';
-      }
-    });
-
-    // Animate elements on scroll
-    const observerOptions = {
-      threshold: 0.7,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.transform = 'translateY(0)';
-          entry.target.style.opacity = '1';
-        }
-      });
-    }, observerOptions);
-
-    // Observe all cards for entrance animations
-    const cards = document.querySelectorAll('.stat-item, .event-card, .team-card, .gallery-item, .pt-exercise, .workout-day');
-    cards.forEach((card, index) => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(30px)';
-      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      
-      setTimeout(() => {
-        observer.observe(card);
-      }, index * 50);
-    });
-
-    // Gallery lightbox functionality
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-    galleryItems.forEach(item => {
-      item.addEventListener('click', function() {
-        // Create lightbox overlay
-        const overlay = document.createElement('div');
-        overlay.style.cssText = `
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.9);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-          cursor: pointer;
-        `;
-        
-        const img = document.createElement('img');
-        img.src = this.src;
-        img.style.cssText = `
-          max-width: 90%;
-          max-height: 90%;
-          border: 3px solid #C0C0C0;
-          border-radius: 4px;
-        `;
-        
-        overlay.appendChild(img);
-        document.body.appendChild(overlay);
-        
-        // Close on click
-        overlay.addEventListener('click', () => {
-          document.body.removeChild(overlay);
-        });
-      });
-    });
-
-    // PT exercise hover effects
-    const ptExercises = document.querySelectorAll('.pt-exercise');
-    ptExercises.forEach(exercise => {
-      exercise.addEventListener('mouseenter', function() {
-        const icon = this.querySelector('.exercise-icon i');
-        if (icon) {
-          icon.style.transform = 'scale(1.3) rotate(10deg)';
-          icon.style.transition = 'transform 0.3s ease';
-          icon.style.textShadow = '0 0 15px rgba(192, 192, 192, 0.5)';
-        }
-      });
-      
-      exercise.addEventListener('mouseleave', function() {
-        const icon = this.querySelector('.exercise-icon i');
-        if (icon) {
-          icon.style.transform = 'scale(1) rotate(0deg)';
-          icon.style.textShadow = 'none';
-        }
-      });
-    });
-
-    // Workout schedule animation
-    const workoutDays = document.querySelectorAll('.workout-day');
-    workoutDays.forEach((day, index) => {
-      day.addEventListener('mouseenter', function() {
-        this.style.background = 'rgba(192, 192, 192, 0.2)';
-        this.style.transform = 'scale(1.05)';
-        
-        // Add ripple effect
-        const ripple = document.createElement('div');
-        ripple.style.cssText = `
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 0;
-          height: 0;
-          border-radius: 50%;
-          background: rgba(192, 192, 192, 0.3);
-          transform: translate(-50%, -50%);
-          animation: ripple 0.6s ease-out;
-          pointer-events: none;
-        `;
-        
-        this.style.position = 'relative';
-        this.appendChild(ripple);
-        
-        setTimeout(() => {
-          if (ripple.parentNode) {
-            ripple.parentNode.removeChild(ripple);
-          }
-        }, 600);
-      });
-      
-      day.addEventListener('mouseleave', function() {
-        this.style.background = 'rgba(192, 192, 192, 0.1)';
-        this.style.transform = 'scale(1)';
-      });
-    });
-
-    // Add ripple animation keyframes
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes ripple {
-        to {
-          width: 100px;
-          height: 100px;
-          opacity: 0;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-
-    // Add loading animation for page
-    window.addEventListener('load', () => {
-      document.body.style.opacity = '0';
-      document.body.style.transition = 'opacity 0.5s ease';
-      setTimeout(() => {
-        document.body.style.opacity = '1';
-      }, 100);
-    });
-
-    // Motivation quote animation
-    const motivationSection = document.querySelector('.motivation-section');
-    const motivationObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const quote = entry.target.querySelector('.motivation-quote');
-          const author = entry.target.querySelector('.quote-author');
-          
-          setTimeout(() => {
-            quote.style.transform = 'translateY(0)';
-            quote.style.opacity = '1';
-          }, 200);
-          
-          setTimeout(() => {
-            author.style.transform = 'translateY(0)';
-            author.style.opacity = '1';
-          }, 600);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    if (motivationSection) {
-      // Set initial states
-      const quote = motivationSection.querySelector('.motivation-quote');
-      const author = motivationSection.querySelector('.quote-author');
-      
-      quote.style.transform = 'translateY(30px)';
-      quote.style.opacity = '0';
-      quote.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
-      
-      author.style.transform = 'translateY(30px)';
-      author.style.opacity = '0';
-      author.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
-      
-      motivationObserver.observe(motivationSection);
-    }
-
-    // Enhanced hero background interaction
-    const hero = document.querySelector('.team-hero');
-    hero.addEventListener('mousemove', (e) => {
-      const rect = hero.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      
-      // Create subtle strength pulse effect following mouse
-      hero.style.setProperty('--mouse-x', x + '%');
-      hero.style.setProperty('--mouse-y', y + '%');
-    });
-
-    // PT Standards progression tracker (simulated)
-    const ptStandards = document.querySelector('.pt-standards');
-    const ptObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const exercises = entry.target.querySelectorAll('.pt-exercise');
-          exercises.forEach((exercise, index) => {
-            setTimeout(() => {
-              exercise.style.transform = 'translateY(0)';
-              exercise.style.opacity = '1';
-              
-              // Add brief highlight effect
-              setTimeout(() => {
-                exercise.style.background = 'rgba(192, 192, 192, 0.2)';
-                setTimeout(() => {
-                  exercise.style.background = 'rgba(192, 192, 192, 0.1)';
-                }, 400);
-              }, 300);
-            }, index * 200);
-          });
-        }
-      });
-    }, { threshold: 0.3 });
-
-    if (ptStandards) {
-      ptObserver.observe(ptStandards);
-    }
-  </script>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -1531,4 +884,651 @@
       display: inline-block;
     }
 
+    .social-links a:hover {
+      color: #FFFFFF;
+      transform: translateY(-3px) scale(1.2);
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .header-icon {
+        height: 80px;
+        max-width: 120px;
+      }
+      
+      .header-title .site-title {
+        font-size: 2.5rem;
+      }
+      
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .team-hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .pt-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .workout-schedule {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .main-container {
+        padding: 1rem;
+      }
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #C0C0C0;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER - Matching Homepage -->
+  <header>
+    <div class="header-title">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDUkVTVAogIDwvdGV4dD4KPC9zdmc+" alt="Ridgeland Crest" class="header-icon">
+      <h1 class="site-title">Ridgeland JROTC</h1>
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0MwQzBDMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDAiPgogICAgSlJPVEMKICAgIENSRVNUCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="JROTC Crest" class="header-icon">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="parents-cadets.html">Parents & Cadets</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams ▾</button>
+        <div class="dropdown-content">
+          <a href="raider.html">Raider Team</a>
+          <a href="colorguard.html">Color Guard</a>
+          <a href="drill.html">Drill Team</a>
+          <a href="rifle.html">Rifle Team</a>
+          <a href="sabre.html">Sabre Team</a>
+          <a href="fitness.html" class="active">Fitness Team</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TEAM HERO SECTION -->
+  <section class="team-hero">
+    <div class="team-hero-content">
+      <h1>Fitness Team</h1>
+      <p class="team-motto">"Strength Through Training"</p>
+      <p class="team-description">Building physical and mental toughness through structured fitness programs, obstacle courses, and team conditioning. Developing the foundation of strength that supports all JROTC activities.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-container">
+    <!-- Team Stats -->
+    <section class="team-stats">
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Year-Round</div>
+        <div class="stat-label">Training Schedule</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Weekly Workouts</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">12</div>
+        <div class="stat-label">Obstacle Events</div>
+      </div>
+    </section>
+
+    <!-- PT Standards -->
+    <div class="pt-standards">
+      <h3>Army Physical Training Standards</h3>
+      <div class="pt-grid">
+        <div class="pt-exercise">
+          <div class="exercise-icon">
+            <i class="fas fa-running"></i>
+          </div>
+          <h4>Push-Ups</h4>
+          <p>Upper body strength and endurance development through progressive training programs.</p>
+          <div class="standards">
+            <h5>Target Goals</h5>
+            <ul class="standards-list">
+              <li>Beginner: 15-25 reps</li>
+              <li>Intermediate: 30-45 reps</li>
+              <li>Advanced: 50+ reps</li>
+              <li>Perfect form required</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pt-exercise">
+          <div class="exercise-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h4>Sit-Ups</h4>
+          <p>Core strength and abdominal muscle development for overall fitness foundation.</p>
+          <div class="standards">
+            <h5>Target Goals</h5>
+            <ul class="standards-list">
+              <li>Beginner: 20-35 reps</li>
+              <li>Intermediate: 40-55 reps</li>
+              <li>Advanced: 60+ reps</li>
+              <li>2-minute time limit</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pt-exercise">
+          <div class="exercise-icon">
+            <i class="fas fa-stopwatch"></i>
+          </div>
+          <h4>2-Mile Run</h4>
+          <p>Cardiovascular endurance and stamina building through progressive running programs.</p>
+          <div class="standards">
+            <h5>Target Times</h5>
+            <ul class="standards-list">
+              <li>Beginner: 18-20 minutes</li>
+              <li>Intermediate: 15-17 minutes</li>
+              <li>Advanced: Under 15 minutes</li>
+              <li>Steady pace maintenance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="pt-exercise">
+          <div class="exercise-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4>Body Composition</h4>
+          <p>Overall health assessment including weight management and body fat percentage.</p>
+          <div class="standards">
+            <h5>Health Metrics</h5>
+            <ul class="standards-list">
+              <li>BMI within healthy range</li>
+              <li>Body fat percentage goals</li>
+              <li>Nutritional awareness</li>
+              <li>Hydration standards</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Events -->
+    <div class="section-header">
+      <h2>Training Programs</h2>
+    </div>
     
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-route"></i>
+        </div>
+        <h3>Obstacle Courses</h3>
+        <p>Navigate challenging military-style obstacle courses designed to build agility, strength, and mental toughness through varied terrain.</p>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3>PT Challenges</h3>
+        <p>Competitive physical training events testing individual and team fitness levels across multiple exercise categories.</p>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Team Building</h3>
+        <p>Group fitness activities that combine physical training with teamwork, communication, and leadership development.</p>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-mountain"></i>
+        </div>
+        <h3>Outdoor Training</h3>
+        <p>Field training exercises incorporating hiking, orienteering, and survival skills in natural environments.</p>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-weight-hanging"></i>
+        </div>
+        <h3>Strength Training</h3>
+        <p>Progressive weight training and resistance exercises to build functional strength and prevent injuries.</p>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-icon">
+          <i class="fas fa-apple-alt"></i>
+        </div>
+        <h3>Nutrition Education</h3>
+        <p>Learning proper nutrition, hydration, and recovery techniques to support optimal physical performance and health.</p>
+      </div>
+    </div>
+
+    <!-- Weekly Workout Schedule -->
+    <div class="workout-program">
+      <div class="section-header">
+        <h2>Weekly Training Schedule</h2>
+      </div>
+      <div class="workout-schedule">
+        <div class="workout-day">
+          <div class="day-name">Monday</div>
+          <div class="focus-area">Upper Body Strength</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Tuesday</div>
+          <div class="focus-area">Cardio & Endurance</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Wednesday</div>
+          <div class="focus-area">Core & Flexibility</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Thursday</div>
+          <div class="focus-area">Lower Body Power</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Friday</div>
+          <div class="focus-area">Team Challenges</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Saturday</div>
+          <div class="focus-area">Outdoor Training</div>
+        </div>
+        <div class="workout-day">
+          <div class="day-name">Sunday</div>
+          <div class="focus-area">Recovery & Rest</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Motivation Quote Section -->
+    <div class="motivation-section">
+      <p class="motivation-quote">"The groundwork for all happiness is good health."</p>
+      <p class="quote-author">- Leigh Hunt</p>
+    </div>
+
+    <!-- Team Leadership -->
+    <div class="section-header">
+      <h2>Fitness Leaders</h2>
+    </div>
+    
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Fitness Leader">
+        <h4>Cadet Captain</h4>
+        <p class="position">Fitness Team Leader</p>
+        <p class="specialty">Program Coordinator</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="PT Instructor">
+        <h4>Cadet Lieutenant</h4>
+        <p class="position">PT Instructor</p>
+        <p class="specialty">Training Programs</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Nutrition Advisor">
+        <h4>Cadet Sergeant</h4>
+        <p class="position">Nutrition Advisor</p>
+        <p class="specialty">Health & Wellness</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9Ijk1IiBmaWxsPSIjQzBDMEMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCI+CiAgICBDQURFVAogICAgUEhPVE8KICA8L3RleHQ+Cjwvc3ZnPg==" alt="Equipment Manager">
+        <h4>Cadet Corporal</h4>
+        <p class="position">Equipment Manager</p>
+        <p class="specialty">Safety & Gear</p>
+      </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section-header">
+      <h2>Training Gallery</h2>
+    </div>
+    
+    <div class="gallery-section">
+      <div class="gallery-grid" id="fitness-gallery">
+        <!-- Placeholder gallery items -->
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgT0JTVEFDTEVTCIAGPC90ZXh0Pgo8L3N2Zz4=" alt="Obstacle Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgU1RSRU5HVEggVFJBSU5JTkcKICA8L3RleHQ+Cjwvc3ZnPg==" alt="Strength Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgQ0FSRElPIFRSQUlOSU5HCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Cardio Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgVEVBTSBDSEFMTEVOR0VTCiAgPC90ZXh0Pgo8L3N2Zz4=" alt="Team Challenges">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgT1VURF9PSiBUUkFJTklORwogIDwvdGV4dD4KPC9zdmc+" alt="Outdoor Training">
+        </div>
+        
+        <div class="gallery-item">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzFhMWExYSIgc3Ryb2tlPSIjQzBDMEMwIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIxNTAiIHk9IjEwNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDMEMwQzAiPgogICAgRklUTkVTUyBBV0FSRFMKICA8L3RleHQ+Cjwvc3ZnPg==" alt="Fitness Awards">
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+      <h3>Build Your Strength</h3>
+      <p>Join the Fitness Team and develop the physical and mental toughness that will serve you throughout life. All fitness levels welcome - we'll help you reach your goals.</p>
+      <a href="files/Waiver_of_Liability.pdf" target="_blank" class="btn">Download Waiver</a>
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Virtus Per Adversitatem – Strength Through Adversity</strong></p>
+    <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61576914316996" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p>Follow us on social media for updates and events!</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effects for header
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const header = document.querySelector('header');
+      
+      if (scrolled > 100) {
+        header.style.background = 'rgba(0, 0, 0, 0.98)';
+        header.style.borderBottomColor = '#FFFFFF';
+      } else {
+        header.style.background = 'rgba(0, 0, 0, 0.95)';
+        header.style.borderBottomColor = '#C0C0C0';
+      }
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.7,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transform = 'translateY(0)';
+          entry.target.style.opacity = '1';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards for entrance animations
+    const cards = document.querySelectorAll('.stat-item, .event-card, .team-card, .gallery-item, .pt-exercise, .workout-day');
+    cards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      
+      setTimeout(() => {
+        observer.observe(card);
+      }, index * 50);
+    });
+
+    // Gallery lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    galleryItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Create lightbox overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+          cursor: pointer;
+        `;
+        
+        const img = document.createElement('img');
+        img.src = this.src;
+        img.style.cssText = `
+          max-width: 90%;
+          max-height: 90%;
+          border: 3px solid #C0C0C0;
+          border-radius: 4px;
+        `;
+        
+        overlay.appendChild(img);
+        document.body.appendChild(overlay);
+        
+        // Close on click
+        overlay.addEventListener('click', () => {
+          document.body.removeChild(overlay);
+        });
+      });
+    });
+
+    // PT exercise hover effects
+    const ptExercises = document.querySelectorAll('.pt-exercise');
+    ptExercises.forEach(exercise => {
+      exercise.addEventListener('mouseenter', function() {
+        const icon = this.querySelector('.exercise-icon i');
+        if (icon) {
+          icon.style.transform = 'scale(1.3) rotate(10deg)';
+          icon.style.transition = 'transform 0.3s ease';
+          icon.style.textShadow = '0 0 15px rgba(192, 192, 192, 0.5)';
+        }
+      });
+      
+      exercise.addEventListener('mouseleave', function() {
+        const icon = this.querySelector('.exercise-icon i');
+        if (icon) {
+          icon.style.transform = 'scale(1) rotate(0deg)';
+          icon.style.textShadow = 'none';
+        }
+      });
+    });
+
+    // Workout schedule animation
+    const workoutDays = document.querySelectorAll('.workout-day');
+    workoutDays.forEach((day, index) => {
+      day.addEventListener('mouseenter', function() {
+        this.style.background = 'rgba(192, 192, 192, 0.2)';
+        this.style.transform = 'scale(1.05)';
+        
+        // Add ripple effect
+        const ripple = document.createElement('div');
+        ripple.style.cssText = `
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0;
+          height: 0;
+          border-radius: 50%;
+          background: rgba(192, 192, 192, 0.3);
+          transform: translate(-50%, -50%);
+          animation: ripple 0.6s ease-out;
+          pointer-events: none;
+        `;
+        
+        this.style.position = 'relative';
+        this.appendChild(ripple);
+        
+        setTimeout(() => {
+          if (ripple.parentNode) {
+            ripple.parentNode.removeChild(ripple);
+          }
+        }, 600);
+      });
+      
+      day.addEventListener('mouseleave', function() {
+        this.style.background = 'rgba(192, 192, 192, 0.1)';
+        this.style.transform = 'scale(1)';
+      });
+    });
+
+    // Add ripple animation keyframes
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes ripple {
+        to {
+          width: 100px;
+          height: 100px;
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Add loading animation for page
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // Motivation quote animation
+    const motivationSection = document.querySelector('.motivation-section');
+    const motivationObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const quote = entry.target.querySelector('.motivation-quote');
+          const author = entry.target.querySelector('.quote-author');
+          
+          setTimeout(() => {
+            quote.style.transform = 'translateY(0)';
+            quote.style.opacity = '1';
+          }, 200);
+          
+          setTimeout(() => {
+            author.style.transform = 'translateY(0)';
+            author.style.opacity = '1';
+          }, 600);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (motivationSection) {
+      // Set initial states
+      const quote = motivationSection.querySelector('.motivation-quote');
+      const author = motivationSection.querySelector('.quote-author');
+      
+      quote.style.transform = 'translateY(30px)';
+      quote.style.opacity = '0';
+      quote.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
+      
+      author.style.transform = 'translateY(30px)';
+      author.style.opacity = '0';
+      author.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
+      
+      motivationObserver.observe(motivationSection);
+    }
+
+    // Enhanced hero background interaction
+    const hero = document.querySelector('.team-hero');
+    hero.addEventListener('mousemove', (e) => {
+      const rect = hero.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      
+      // Create subtle strength pulse effect following mouse
+      hero.style.setProperty('--mouse-x', x + '%');
+      hero.style.setProperty('--mouse-y', y + '%');
+    });
+
+    // PT Standards progression tracker (simulated)
+    const ptStandards = document.querySelector('.pt-standards');
+    const ptObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const exercises = entry.target.querySelectorAll('.pt-exercise');
+          exercises.forEach((exercise, index) => {
+            setTimeout(() => {
+              exercise.style.transform = 'translateY(0)';
+              exercise.style.opacity = '1';
+              
+              // Add brief highlight effect
+              setTimeout(() => {
+                exercise.style.background = 'rgba(192, 192, 192, 0.2)';
+                setTimeout(() => {
+                  exercise.style.background = 'rgba(192, 192, 192, 0.1)';
+                }, 400);
+              }, 300);
+            }, index * 200);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (ptStandards) {
+      ptObserver.observe(ptStandards);
+    }
+  </script>
+</body>
+</html>
