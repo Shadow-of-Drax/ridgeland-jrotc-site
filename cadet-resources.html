@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadet Resources | Ridgeland JROTC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css?v=1" />
+  <style>
+    .resources-hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                  url('images/hero/herobanner-test-1.webp') no-repeat center center/cover;
+      min-height: 34vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .resources-hero-content {
+      max-width: 900px;
+      background: rgba(0,0,0,0.45);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+    }
+
+    .resources-hero h2 {
+      font-size: 2.2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .resources-hero p {
+      color: #ddd;
+      margin: 0;
+    }
+
+    .resources-layout {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 1.5rem;
+    }
+
+    .resources-sidebar,
+    .resources-main {
+      background-color: rgba(0, 0, 0, 0.78);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #222;
+    }
+
+    .resources-sidebar {
+      padding: 1.25rem;
+      position: sticky;
+      top: 150px;
+      align-self: start;
+    }
+
+    .resources-sidebar h3 {
+      color: gold;
+      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+    }
+
+    .resources-sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .resources-sidebar li + li {
+      margin-top: 0.5rem;
+    }
+
+    .resources-sidebar a {
+      color: #C0C0C0;
+      text-decoration: none;
+    }
+
+    .resources-sidebar a:hover {
+      color: gold;
+    }
+
+    .resources-main {
+      padding: 1.5rem;
+    }
+
+    .resources-main h2 {
+      color: gold;
+      margin-bottom: 0.75rem;
+    }
+
+    .resources-main p.intro {
+      margin-bottom: 1.25rem;
+    }
+
+    .accordion-group + .accordion-group {
+      margin-top: 1.75rem;
+    }
+
+    .accordion-group h3 {
+      color: #fff;
+      margin-bottom: 0.85rem;
+      border-left: 4px solid gold;
+      padding-left: 0.6rem;
+    }
+
+    .accordion-item {
+      border: 1px solid rgba(192,192,192,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .accordion-item + .accordion-item {
+      margin-top: 0.8rem;
+    }
+
+    .accordion-button {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      color: #fff;
+      border: none;
+      padding: 1rem 1.1rem;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-button:hover {
+      background: rgba(255,255,255,0.08);
+    }
+
+    .accordion-button .icon {
+      color: gold;
+      transition: transform 0.25s ease;
+      margin-left: 1rem;
+      flex-shrink: 0;
+    }
+
+    .accordion-item.active .accordion-button .icon {
+      transform: rotate(45deg);
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.28s ease;
+      background: rgba(0,0,0,0.18);
+    }
+
+    .accordion-content-inner {
+      padding: 0 1.1rem 1rem 1.1rem;
+      color: #ddd;
+    }
+
+    .accordion-content-inner p,
+    .accordion-content-inner ul {
+      margin-top: 0.9rem;
+    }
+
+    .accordion-content-inner ul {
+      padding-left: 1.2rem;
+    }
+
+    .resource-note {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-left: 4px solid #4B5320;
+      background: rgba(255,255,255,0.04);
+      border-radius: 6px;
+    }
+
+    .active-nav {
+      color: gold !important;
+    }
+
+    @media (max-width: 900px) {
+      .resources-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .resources-sidebar {
+        position: static;
+      }
+
+      .resources-hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">
+      <img src="images/logos/Crest.png" alt="Ridgeland Crest" class="header-icon">
+      <h1 class="site-title">Ridgeland JROTC</h1>
+      <img src="images/logos/JROTC Crest.png" alt="JROTC Crest" class="header-icon">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="parents-cadets.html">Parents & Cadets</a>
+      <a href="cadet-resources.html" class="active-nav">Cadet Resources</a>
+      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Teams ▾</button>
+        <div class="dropdown-content">
+          <a href="raider.html">Raider Team</a>
+          <a href="colorguard.html">Color Guard</a>
+          <a href="drill.html">Drill Team</a>
+          <a href="rifle.html">Rifle Team</a>
+          <a href="sabre.html">Sabre Team</a>
+          <a href="fitness.html">Fitness Team</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="resources-hero">
+    <div class="resources-hero-content">
+      <h2>Cadet Resources</h2>
+      <p>Reference materials, cadences, and tools to support cadet development, training, and esprit de corps.</p>
+    </div>
+  </section>
+
+  <div class="resources-layout">
+    <aside class="resources-sidebar">
+      <h3>On This Page</h3>
+      <ul>
+        <li><a href="#cadences">Cadences</a></li>
+        <li><a href="#calling">Calling Cadences</a></li>
+        <li><a href="#marching">Marching Cadences</a></li>
+        <li><a href="#running">Running Cadences</a></li>
+        <li><a href="#spirit">Battalion Spirit</a></li>
+        <li><a href="#future-resources">Future Resources</a></li>
+      </ul>
+    </aside>
+
+    <main class="resources-main">
+      <section id="cadences">
+        <h2>Cadences</h2>
+        <p class="intro">
+          This page is designed to serve as a growing resource for cadets and instructors. Cadences will be organized by type so they are easy to find, practice, and use during training. The sections below are expandable and ready to be populated.
+        </p>
+      </section>
+
+      <section class="accordion-group" id="calling">
+        <h3>Calling Cadences</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Call and Response Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Use this section for a cadence where the leader calls and the formation responds.</p>
+              <ul>
+                <li>Add full cadence text here later</li>
+                <li>Optionally include notes for tone, pace, and emphasis</li>
+                <li>Can also include approved / instructor-selected variations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Motivational Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Use this section for motivational cadences used during unit movement, PT, or events.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion-group" id="marching">
+        <h3>Marching Cadences</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Standard Marching Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Insert cadence lyrics or drill-use notes here.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>School / Battalion-Specific Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Use this section for local Panther Battalion cadences or approved custom calls.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion-group" id="running">
+        <h3>Running Cadences</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>PT Running Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Use this section for cadences typically called during formation runs and conditioning events.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Raider / Conditioning Cadence Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Use this section for more intense or event-specific cadences connected to Raider training and team conditioning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion-group" id="spirit">
+        <h3>Battalion Spirit</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Panther Battalion Chant Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>This section can be used for unit chants, spirit calls, or short rally pieces used at events, competitions, or ceremonies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion-group" id="future-resources">
+        <h3>Future Resources</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Drill and Ceremony Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>This area can later include drill references, commands, inspection guides, and quick-reference resources.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button" type="button">
+            <span>Forms / Downloads Placeholder</span>
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              <p>Add links to cadet packets, forms, SOPs, inspection sheets, or other downloadable materials here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="resource-note">
+        <strong>Note:</strong> This page is intentionally structured as a shell so additional cadences and resources can be added cleanly over time without redesigning the page.
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>Virtus Per Adversitatem – Strength Through Adversity</p>
+    <p>&copy; 2025 Ridgeland High School JROTC – Panther Battalion</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61576914316996" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/ridgelandjrotc/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p>Follow us on social media for updates and events!</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const content = item.querySelector('.accordion-content');
+
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+          content.style.maxHeight = null;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
