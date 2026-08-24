@@ -121,45 +121,56 @@ function displayEvents() {
     }
 
 
-    // ==========================================
-    // NEXT EVENT
-    // ==========================================
+   // ==========================================
+// NEXT EVENT
+// ==========================================
 
-    const nextEvent = futureEvents[0];
+const nextEvent = futureEvents[0];
 
-    nextEventElement.textContent =
-        `Next Event: ${nextEvent.name} - ${formatDate(nextEvent.eventDate)}`;
-
-
-    // ==========================================
-    // UPCOMING EVENTS
-    // ==========================================
-
-    upcomingList.innerHTML = "";
-
-    const remainingEvents = futureEvents.slice(1);
-
-    if (remainingEvents.length === 0) {
-
-        upcomingList.innerHTML =
-            "<p>No additional events currently scheduled.</p>";
-
-        return;
-    }
+nextEventElement.innerHTML = `
+    Next Event: ${nextEvent.name} - ${formatDate(nextEvent.eventDate)}
+    <br>
+    <span class="event-details">
+        ${nextEvent.location ? nextEvent.location : ""}
+        ${nextEvent.type ? " | " + nextEvent.type : ""}
+        ${nextEvent.time ? " | " + nextEvent.time : ""}
+    </span>
+`;
 
 
-    remainingEvents.forEach(event => {
+// ==========================================
+// UPCOMING EVENTS
+// ==========================================
 
-        const eventItem = document.createElement("p");
+upcomingList.innerHTML = "";
 
-        eventItem.textContent =
-            `${formatDate(event.eventDate)} - ${event.name}`;
+const remainingEvents = futureEvents.slice(1);
 
-        upcomingList.appendChild(eventItem);
-
-    });
+if (remainingEvents.length === 0) {
+    upcomingList.innerHTML =
+        "<p>No additional events currently scheduled.</p>";
+    return;
 }
 
+remainingEvents.forEach(event => {
+
+    const eventItem = document.createElement("div");
+
+    eventItem.classList.add("upcoming-event-item");
+
+    eventItem.innerHTML = `
+        <strong>${formatDate(event.eventDate)} - ${event.name}</strong>
+        <br>
+        <span class="event-details">
+            ${event.location ? event.location : ""}
+            ${event.type ? " | " + event.type : ""}
+            ${event.time ? " | " + event.time : ""}
+        </span>
+    `;
+
+    upcomingList.appendChild(eventItem);
+});
+}
 
 // ==========================================
 // FORMAT DATE
