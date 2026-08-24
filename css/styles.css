@@ -956,3 +956,13 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.event-details {
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.85;
+}
+
+.upcoming-event-item {
+    margin-bottom: 12px;
+}
