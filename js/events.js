@@ -61,6 +61,14 @@ const events = [
         departure: "TBD",
         eventTime: "TBD",
         type: "Raider Competition"
+    },
+    {
+        date: "2026-09-04",
+        name: "Color Guard Football Game",
+        location: "Ridgelad High School",
+        departure: "TBD",
+        eventTime: "TBD",
+        type: "Color Guard"
     }
 ];
 
