@@ -51,10 +51,17 @@
   <!-- MAIN CONTENT -->
   <div class="main-container">
     <!-- Next Event Highlight -->
-    <section class="event-highlight">
-      <h3>Next Event: TBD</h3>
-      <p>We Start Drill Season soon.</p>
-    </section>
+   <section class="event-highlight">
+
+    <h3 id="next-event"></h3>
+
+    <div class="upcoming-events">
+        <h4>Upcoming Events</h4>
+
+        <div id="upcoming-events-list"></div>
+    </div>
+
+</section>
 
     <!-- Quick Training Schedule -->
     <section class="team-stats">
@@ -307,5 +314,9 @@
     // Update countdown every hour
     setInterval(updateCountdown, 3600000);
   </script>
+
+  <script src="js/events.js"></script>
+
+  
 </body>
 </html>
