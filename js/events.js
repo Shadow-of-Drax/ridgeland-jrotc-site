@@ -18,12 +18,12 @@ const events = [
         date: "2026-09-05",
         name: "Etowah Raider Challenge",
         location: "6565 Putnam Ford Drive, Woodstock, GA 30189",
-        departure: "6:00 AM",
+        departure: "5:30 AM",
         eventTime: "8:00 AM",
         type: "Raider Competition"
     },
     {
-        date: "2026-09-15",
+        date: "2026-09-12",
         name: "Adairsville Raider Challenge",
         location: "519 Old Highway 41, Adairsville, GA 30103",
         departure: "6:00 AM",
